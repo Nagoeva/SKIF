@@ -1,0 +1,53 @@
+#root{
+  width: 100%; height: 100%;
+}
+
+
+.wrapper{
+  min-width: $min_w;
+  min-height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.main{
+  flex: 1 1 auto;
+}
+
+
+.page{
+  width: 100%; min-height: 100vh;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: $desktop;
+  width: 98%;
+  height: 100%;
+}
+
+// _______media
+
+
+@media (max-width: $large) {
+  body{ font-size: 1em;}
+  .container{ max-width:$desktop;}
+}
+@media (max-width: $desktop) {
+  body{ font-size: 0.95em;}
+  .container{ max-width:$laptop;}
+}
+@media (max-width: $laptop) {
+  body{ font-size: 0.9em;}
+  .container{ max-width:$tablet;}
+}
+@media (max-width: $tablet) {
+  body{ font-size: 0.85em;}
+  .container{ max-width:$phone; }
+}
+@media (max-width: $phone) {
+  body{ font-size: 0.8em;}
+}

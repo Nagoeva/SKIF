@@ -1,0 +1,67 @@
+html {
+  height: 100%;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  // убирает синий фон при клике на кнопку (mobile)
+}
+
+body {
+  height: 100%;
+  font-family: tahoma, verdana;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; letter-spacing: 0em}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img{
+  display: block;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+input,
+select,
+button { outline: none; }
+
+a{
+	text-decoration: none;
+}
+
+svg{
+  width: 1em; height: 1em;
+  fill: currentColor;
+  path{fill:inherit;}
+}
